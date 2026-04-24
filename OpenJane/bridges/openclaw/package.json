@@ -1,0 +1,32 @@
+{
+  "name": "@ttw/openclaw-openjanechat",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "setupEntry": "./setup-entry.ts",
+    "channel": {
+      "id": "OpenJaneChat",
+      "label": "OpenJaneChat",
+      "selectionLabel": "OpenJaneChat (self-hosted)",
+      "detailLabel": "OpenJaneChat Bot",
+      "blurb": "Connect OpenClaw to OpenJane."
+    }
+  },
+  "dependencies": {
+    "openclaw": "^2026.4.23"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  },
+  "overrides": {
+    "uuid": "14.0.0"
+  }
+}

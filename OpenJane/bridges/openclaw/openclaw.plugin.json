@@ -1,0 +1,33 @@
+{
+  "id": "OpenJaneChat",
+  "kind": "channel",
+  "channels": ["OpenJaneChat"],
+  "name": "OpenJaneChat",
+  "description": "OpenJaneChat channel plugin",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "channels": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "OpenJaneChat": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["token", "baseUrl"],
+            "properties": {
+              "token": { "type": "string" },
+              "baseUrl": { "type": "string" },
+              "allowFrom": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "dmSecurity": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

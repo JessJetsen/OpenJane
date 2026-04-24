@@ -1,0 +1,39 @@
+# Default private: ignore everything unless explicitly allowlisted below.
+*
+
+# Keep traversing directories so allowlist rules can reach nested files.
+!*/
+
+# Public root docs/config.
+!/.gitignore
+!/README.md
+
+# Public bridge package.
+!/OpenJane/
+!/OpenJane/bridges/
+!/OpenJane/bridges/openclaw/
+!/OpenJane/bridges/openclaw/**
+
+# Still-private/generated content inside the public bridge tree.
+OpenJane/bridges/openclaw/node_modules/
+OpenJane/bridges/openclaw/dist/
+OpenJane/bridges/openclaw/build/
+OpenJane/bridges/openclaw/.DS_Store
+
+# Universal local/private guardrails.
+.DS_Store
+.env
+.env.*
+*.local
+*.secret
+*.secrets
+*.key
+*.pem
+*.p8
+*.p12
+*.mobileprovision
+.openclaw/
+.codex/
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
