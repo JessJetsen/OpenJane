@@ -225,7 +225,7 @@ OpenClaw
 
 A local agent/runtime interface for coordinating model-backed work.
 
-OpenJane should be able to receive status from OpenClaw and eventually send light commands or prompts into it.
+OpenJane can now receive status from OpenClaw and send commands or prompts into it  using an extensible api / chat app.
 
 NEMOClaw
 
@@ -250,9 +250,9 @@ Deeper integration can come later.
 
 Wearable / Mobile Interfaces
 
-OpenJane should remain compatible with voice-first and wearable-first interaction patterns, including smart glasses and mobile devices.
+OpenJane should remain compatible with voice-first and wearable-first interaction patterns, including smart glasses and mobile devices.  Meta smart glasses were integrated as a first class user input & notifier in 0.1 and compatibility will be maintained and extended where possible.
 
-The wearable layer is not the whole project.
+The wearable layer is not the whole project. 
 
 It is one interface surface.
 
