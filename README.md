@@ -356,6 +356,7 @@ It asks:
 - How do we make persistent assistance useful without making it intrusive?
 
 Jane Agent Summary
+
 Jane is the agent inside OpenJane: a memory-aware assistant meant to shift fluidly between roles like tutor, planner, budget helper, document finder, health/logging companion, family organizer, and business support agent. Jane is not meant to be one static persona. She is designed as a flexible agent that can change mode depending on context while keeping continuity across the user’s life.
 
 The core idea is actionable memory. Jane should not merely retrieve notes; she should activate relevant clusters of memory, tools, templates, risks, obligations, and current theories. A question like “Can we afford this trip?” should bring forward budget state, calendar timing, household goals, recent spending, trip plans, risk paths, and the right interface. A question like “Find that form again” should use the user’s document memory instead of re-searching the web.
@@ -389,10 +390,10 @@ metal integration to power/lora Jane locally
 trillian like comms (could have... lobster kinda makes it trivial)
 Robust calendar data model, persistence, filtering UI, and Jane access.
 Full trackers/plans/goals/documents products.
+Real Notion-like markdown editor polish.
 Implement planned knowledge trees and graph visualization.
 Production RAG/vector store.
 Jane policy layer for sensitive writes/export.
-Real Notion-like markdown editor polish.
 App state scraping/indexing pass so Jane can notice recent files/events/lists/friends/etc.
 
 Copyright TheTinkeringWizard 2026 
