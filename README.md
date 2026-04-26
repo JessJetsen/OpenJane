@@ -399,6 +399,11 @@ Near-term work:
 - App state scraping/indexing pass so Jane can notice recent files/events/lists/friends/etc.
 
 Copyright TheTinkeringWizard 2026 
+
+---
+
+<img width="300" height="200" alt="tri" src="https://github.com/user-attachments/assets/fa6dc48b-7ba0-403c-a96c-88d907e920c4" />
+
 ---
 
 License
