@@ -363,6 +363,8 @@ The core idea is actionable memory. Jane should not merely retrieve notes; she s
 
 Jane’s memory model is built around graph concepts: sources, nodes, edges, clusters, blueprints, action maps, and active inquiries. Blueprints represent durable mental or world models. ActionMaps represent repeatable workflows and procedural patterns. Active inquiries preserve uncertainty through a BestWorkingTheory and BestCompetingTheory so Jane can reason without pretending unresolved things are settled.
 
+Jane's Human/user centric graph is based around MaxLife, which is currently a 100 year lifeplan for human development, the day that can be extended to 150 or 200 will be a happy one.  MaxLife strives to create a set of tools, plans and guidelines that help focus and maximize human potential.  Roles are assigned based on context and the individual, but the framework is meant to be a structured learning / health / relationship / success development guide for all stages of life.
+
 Jane’s intended contract is privacy-first and local-first. Sensitive areas like health, money, children/school records, secrets, contracts, and relationships require explicit policy checks before writes or cloud sharing. The long-term vision is an assistant that can grow with the user from daily notes and trackers into serious life infrastructure while keeping ownership and visibility in the user’s hands.
 
 Status
