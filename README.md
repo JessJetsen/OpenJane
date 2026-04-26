@@ -1,14 +1,14 @@
 # OpenJane
 
-**A local-first companion interface for wearable AI and agentic software foundries.**
+OpenJane is a local-first personal operating layer for iPhone/iPad: chat, memory, documents, recordings, lists, calendar, trackers, plans, and goals in one app. The goal is not just another assistant UI, but a private workspace where Jane can understand the user’s current context, help organize life domains, and activate the right tools or views when needed.
 
-OpenJane is an experimental human-facing interface for smart glasses, voice, mobile devices, and multi-node agent systems.
+The current iOS prototype includes an iMessage-style chat surface, tabbed app shell, audio/video recording scaffolds, markdown texts, markdown lists, layered calendar direction, public/private/business file storage lanes, and a file manager for moving user files between visibility levels. Public files are designed to be available through iOS Files under OpenJane, while private/business files stay inside the app container.
 
-The project consolidates earlier explorations — **X1**, **KillerView**, and **BlueT33th** — into one coherent companion layer for persistent assistance, agent notifications, project acceleration, and human-in-the-loop software creation.
+OpenJane includes an openclaw channel plugin to communicate with your lobster and use it's tools.
 
 OpenJane is intended to become a **SPINE-aware endpoint** for the Jetsen Software Foundry: a way for a human to speak into the system, receive meaningful updates back from it, and stay aligned with distributed agents, build tools, models, queues, and project workflows.
 
-It is not meant to be another chatbot wrapper.
+OpenJane is still early. Many surfaces are scaffolds rather than finished products, but the foundation is being shaped around a durable contract: user-owned data, local-first storage, clear visibility controls, and an assistant that can work across real life domains without flattening everything into one generic chat box.
 
 The goal is a practical, inspectable interface between human intent and machine execution.
 
@@ -353,24 +353,32 @@ It asks:
 - How can local-first systems remain understandable?
 - How do we make persistent assistance useful without making it intrusive?
 
+Jane Agent Summary
+Jane is the agent inside OpenJane: a memory-aware assistant meant to shift fluidly between roles like tutor, planner, budget helper, document finder, health/logging companion, family organizer, and business support agent. Jane is not meant to be one static persona. She is designed as a flexible agent that can change mode depending on context while keeping continuity across the user’s life.
+
+The core idea is actionable memory. Jane should not merely retrieve notes; she should activate relevant clusters of memory, tools, templates, risks, obligations, and current theories. A question like “Can we afford this trip?” should bring forward budget state, calendar timing, household goals, recent spending, trip plans, risk paths, and the right interface. A question like “Find that form again” should use the user’s document memory instead of re-searching the web.
+
+Jane’s memory model is built around graph concepts: sources, nodes, edges, clusters, blueprints, action maps, and active inquiries. Blueprints represent durable mental or world models. ActionMaps represent repeatable workflows and procedural patterns. Active inquiries preserve uncertainty through a BestWorkingTheory and BestCompetingTheory so Jane can reason without pretending unresolved things are settled.
+
+Jane’s intended contract is privacy-first and local-first. Sensitive areas like health, money, children/school records, secrets, contracts, and relationships require explicit policy checks before writes or cloud sharing. The long-term vision is an assistant that can grow with the user from daily notes and trackers into serious life infrastructure while keeping ownership and visibility in the user’s hands.
 
 Status
 
-Early planning and architecture.
+The current iOS prototype includes an iMessage-style chat surface, tabbed app shell, audio/video recording scaffolds, markdown texts, markdown lists, layered calendar direction, public/private/business file storage lanes, and a file manager for moving user files between visibility levels. Public files are designed to be available through iOS Files under OpenJane, while private/business files stay inside the app container.
 
-This repository will document the rebuild from the ground up, including design notes, decisions, prototypes, implementation slices, and foundry-generated artifacts where useful.
-
-Current Direction
+OpenJane includes an openclaw channel plugin to communicate with your lobster and use it's tools.
 
 Near-term work:
 
-- define the event model
-- define the OpenJane/SPINE boundary
-- create minimal local notification loop
-- document integration assumptions
-- prototype voice or text seed prompt capture
-- prototype slice completion and blocker notification flow
-- keep the implementation small and inspectable
+Real file previews.
+Real conversion engine for docs/audio/video.
+Robust calendar data model, persistence, filtering UI, and Jane access.
+Full trackers/plans/goals/documents products.
+Implement planned knowledge trees and graph visualization.
+Production RAG/vector store.
+Jane policy layer for sensitive writes/export.
+Real Notion-like markdown editor polish.
+App state scraping/indexing pass so Jane can notice recent files/events/lists/friends/etc.
 
 Copyright TheTinkeringWizard 2026 
 ---
