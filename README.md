@@ -389,22 +389,46 @@ OpenJane includes an openclaw channel plugin to communicate with your lobster an
 
 Near-term work:
 
-- metal integration to power/lora Jane locally
-- trillian like comms (could have... lobster kinda makes it trivial)
-- Robust calendar data model, persistence, filtering UI, and Jane access.
-- Full trackers/plans/goals/documents products.
-- Real Notion-like markdown editor polish. & pdf tinkering
-- Basic Image edits (crop, scale, rotate, chroma) & conversions
-- Basic Audio multi track (A+B=) & conversions
-- Basic Video audio changer (record a voice over while the video is playing and mix / replace the current audio against it)
-- Basic clip duration edits 
-- Mp4 <-> mov conversion.
-- Building mode (Constrained, Contiguous, Freeform) & World mode 3d scanner options.
+## v0.1 - Alpha rollout completion targets
+
+- metal integration to power/lora Jane locally v0.1
+- Mp4 <-> mov conversion. v0.1
+- M4a <-> mp3 conversion. v0.1
+- jpg/heic/gif/png conversions v0.1
 - Solidify RaG / Vector store graph structure against Maxlife / Jane / User / Private / Business / FileDrop for v0.1
-- AiSoftwareFoundry / JAMMERS / SPINE RaG integrations in V0.2
-- Implement planned knowledge trees and graph visualization.
-- App state scraping/indexing pass so Jane can notice recent files/events/lists/friends/etc.
-- Location, motion, acceleration and path/route mapping.
+
+---
+## v0.2 targets
+
+- Robust calendar data model, persistence, filtering UI, and Jane access. v0.2
+- Basic video clip duration edits v0.2
+- Real Notion-like markdown editor polish v0.2
+- Basic Image edits (crop, scale, rotate, chroma) v0.2
+- Sprite Sheet -> .gif simple cell animation v0.2
+- Basic Audio multi track (A+B=) v0.2
+
+---
+## v0.3 targets
+
+- Full trackers/plans/goals/documents products.v0.3
+- PDF Tinkering in the document editer & Signature scaffolding v 0.3
+- Implement planned knowledge trees and graph visualization. v0.3
+- App state scraping/indexing pass so Jane can notice recent files/events/lists/friends/etc. v0.3
+
+---
+## 0.4 targets
+
+- Basic Video audio changer (record a voice over while the video is playing, mix / replace the current audio against it) v0.4
+- Building mode (Constrained, Contiguous, Freeform) & World mode 3d scanner options. v0.4
+- AiSoftwareFoundry / JAMMERS / SPINE RaG integrations V0.4
+- Signed document capable / PDF raw edit capability scaffolded v0.4
+
+---
+
+## Maybes
+
+- Trillian like comms (could have... lobster kinda makes it trivial) v?
+- Location, motion, acceleration and path/route mapping. v0.5 as part of real world telenetry gathering for RaG.
 
   
 Copyright TheTinkeringWizard 2026 
