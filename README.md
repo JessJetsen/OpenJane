@@ -388,15 +388,15 @@ All of this is built as a **single universal iPhone/iPad app**, with features ga
 OpenJane includes an openclaw channel plugin to communicate with your lobster and use it's tools.
 
 Near-term work:
-metal integration to power/lora Jane locally
-trillian like comms (could have... lobster kinda makes it trivial)
-Robust calendar data model, persistence, filtering UI, and Jane access.
-Full trackers/plans/goals/documents products.
-Real Notion-like markdown editor polish.
-Implement planned knowledge trees and graph visualization.
-Production RAG/vector store.
-Jane policy layer for sensitive writes/export.
-App state scraping/indexing pass so Jane can notice recent files/events/lists/friends/etc.
+
+- metal integration to power/lora Jane locally
+- trillian like comms (could have... lobster kinda makes it trivial)
+- Robust calendar data model, persistence, filtering UI, and Jane access.
+- Full trackers/plans/goals/documents products.
+- Real Notion-like markdown editor polish.
+- Implement planned knowledge trees and graph visualization.
+- Production RAG/vector store.
+- App state scraping/indexing pass so Jane can notice recent files/events/lists/friends/etc.
 
 Copyright TheTinkeringWizard 2026 
 ---
