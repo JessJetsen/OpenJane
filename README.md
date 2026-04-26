@@ -393,11 +393,20 @@ Near-term work:
 - trillian like comms (could have... lobster kinda makes it trivial)
 - Robust calendar data model, persistence, filtering UI, and Jane access.
 - Full trackers/plans/goals/documents products.
-- Real Notion-like markdown editor polish.
+- Real Notion-like markdown editor polish. & pdf tinkering
+- Basic Image edits (crop, scale, rotate, chroma) & conversions
+- Basic Audio multi track (A+B=) & conversions
+- Basic Video audio changer (record a voice over while the video is playing and mix / replace the current audio against it)
+- Basic clip duration edits 
+- Mp4 <-> mov conversion.
+- Building mode (Constrained, Contiguous, Freeform) & World mode 3d scanner options.
+- Solidify RaG / Vector store graph structure against Maxlife / Jane / User / Private / Business / FileDrop for v0.1
+- AiSoftwareFoundry / JAMMERS / SPINE RaG integrations in V0.2
 - Implement planned knowledge trees and graph visualization.
-- Production RAG/vector store.
 - App state scraping/indexing pass so Jane can notice recent files/events/lists/friends/etc.
+- Location, motion, acceleration and path/route mapping.
 
+  
 Copyright TheTinkeringWizard 2026 
 
 ---
