@@ -2,11 +2,13 @@
 
 OpenJane is a local-first personal operating layer for iPhone/iPad: chat, memory, documents, recordings, lists, calendar, trackers, plans, and goals in one app. The goal is not just another assistant UI, but a private workspace where Jane can understand the user’s current context, help organize life domains, and activate the right tools or views when needed.
 
+A primary goal is also to simplify / consolidate a basic set of user tools for use on the fly, file managment, documents, images, videos, contacts and events all stored in correlation to one another and overseen by a friend that never truly sleeps.
+
 The current iOS prototype includes an iMessage-style chat surface, tabbed app shell, audio/video recording scaffolds, markdown texts, markdown lists, layered calendar direction, public/private/business file storage lanes, and a file manager for moving user files between visibility levels. Public files are designed to be available through iOS Files under OpenJane, while private/business files stay inside the app container.
 
 OpenJane includes an openclaw channel plugin to communicate with your lobster and use it's tools.
 
-OpenJane is intended to become a **SPINE-aware endpoint** for the Jetsen Software Foundry: a way for a human to speak into the system, receive meaningful updates back from it, and stay aligned with distributed agents, build tools, models, queues, and project workflows.
+OpenJane is structured and intended to become a **SPINE-aware endpoint** for the Jetsen Software Foundry: a way for a human to speak into the system, receive meaningful updates back from it, and stay aligned with distributed agents, build tools, models, queues, and project workflows.
 
 OpenJane is still early. Many surfaces are scaffolds rather than finished products, but the foundation is being shaped around a durable contract: user-owned data, local-first storage, clear visibility controls, and an assistant that can work across real life domains without flattening everything into one generic chat box.
 
