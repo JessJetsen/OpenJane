@@ -4,13 +4,13 @@ OpenJane is a local-first personal operating layer for iPhone/iPad: chat, memory
 
 A primary goal is also to simplify / consolidate a basic set of user tools for use on the fly, file managment, documents, images, videos, contacts and events all stored in correlation to one another and overseen by a friend that never truly sleeps.
 
-The current iOS prototype includes an iMessage-style chat surface, tabbed app shell, audio/video recording scaffolds, markdown texts, markdown lists, layered calendar direction, public/private/business file storage lanes, and a file manager for moving user files between visibility levels. Public files are designed to be available through iOS Files under OpenJane, while private/business files stay inside the app container.
+The current iOS prototype includes an iMessage-style chat surface, tabbed app shell, audio/video recording , and 3d capture and scanning scaffolds, markdown texts, markdown lists, layered calendar direction, public/private/business file storage lanes, and a file manager for moving user files between visibility levels. Public files are designed to be available through iOS Files under OpenJane, while private/business files stay inside the app container.
 
 OpenJane includes an openclaw channel plugin to communicate with your lobster and use it's tools.
 
-OpenJane is structured and intended to become a **SPINE-aware endpoint** for the Jetsen Software Foundry: a way for a human to speak into the system, receive meaningful updates back from it, and stay aligned with distributed agents, build tools, models, queues, and project workflows.
+OpenJane is structured and intended to become a **SPINE-aware endpoint** the Jetsen Software Foundry: a way for users to speak into the system, receive meaningful updates back from it, and stay aligned with distributed agents, build tools, models, queues, and project workflows.
 
-OpenJane is still early. Many surfaces are scaffolds rather than finished products, but the foundation is being shaped around a durable contract: user-owned data, local-first storage, clear visibility controls, and an assistant that can work across real life domains without flattening everything into one generic chat box.
+Some surfaces are scaffolds rather than finished products, but the foundation is being shaped around a durable contract: user-owned data, local-first storage, clear visibility controls, and an assistant that can work across real life domains without flattening everything into one generic chat box.
 
 The goal is a practical, inspectable interface between human intent and machine execution.
 
@@ -366,14 +366,27 @@ Jane’s intended contract is privacy-first and local-first. Sensitive areas lik
 
 Status
 
-The current iOS prototype includes an iMessage-style chat surface, tabbed app shell, audio/video recording scaffolds, markdown texts, markdown lists, layered calendar direction, public/private/business file storage lanes, and a file manager for moving user files between visibility levels. Public files are designed to be available through iOS Files under OpenJane, while private/business files stay inside the app container.
+OpenJane’s iOS app now has a much more capable local-first workspace surface:
+
+The current iOS prototype includes an iMessage-style chat surface, tabbed app shell, 3d capture & storage, image capture & storage, audio/video recording scaffolds, markdown texts, markdown lists, layered calendar direction, public/private/business file storage lanes, and a file manager for moving user files between visibility levels. Public files are designed to be available through iOS Files under OpenJane, while private/business files stay inside the app container.
+
+- **File visibility lanes** remain `Private`, `Business`, and internal `public`, but the user-facing label for `public` is now **FileDrop** (Files-visible) to reduce “public == world” confusion.
+- The **Files** tab now supports preview/open for common formats: `md/txt/pdf`, `m4a/mp3/m4b/wav`, `mov/mp4`, and images (`jpg/png/heic`). Basic `md <-> txt` conversion is implemented; other conversions are stubbed behind menus.
+- **Audio/Video/Images** recording flows save into lane-aware folders with a consistent filename prompt and visibility picker. Saved recordings/captures can be moved between lanes.
+- The **3D** tab is now functional and split into practical surfaces:
+  - **Captures**: session-based multi-photo collections saved into `3D/Captures/<session>/images/` with `manifest.json`. Includes a **Capture Wizard** (Object + Turntable modes) with a checklist and completion gating, plus a **Stage Build-Ready** action for users without an immediate reconstruction pipeline.
+  - **Scans**: LiDAR shot capture (when available) that saves `color.jpg`, `depth_f32.bin`, `depth_meta.json`, and `intrinsics.json` per shot into `3D/Scans/<scan>/SHOT_00001/…`.
+  - **Sites**: ARKit world-space scanning with a bounded capture box (size, anchor corner, yaw, height offset). Exports `site.json` and (when mesh is supported) a clipped `mesh.obj` into `3D/Sites/<site>/…`.
+  - **Room wizard**: a guided room flow that reuses the Sites scanner and records `includeDoors` in `site.json`.
+- **Capture Appearance Frames** is now supported during Sites/Room scanning: each tap saves a registered camera frame as `FRAME_00001.jpg` plus a sidecar JSON containing camera pose and intrinsics. These are exported into `appearance_frames/` alongside the site export to support later texture baking / appearance reconstruction.
+
+All of this is built as a **single universal iPhone/iPad app**, with features gated at runtime based on device capability (e.g., LiDAR mesh support).
 
 OpenJane includes an openclaw channel plugin to communicate with your lobster and use it's tools.
 
 Near-term work:
-
-Real file previews.
-Real conversion engine for docs/audio/video.
+metal integration to power/lora Jane locally
+trillian like comms (could have... lobster kinda makes it trivial)
 Robust calendar data model, persistence, filtering UI, and Jane access.
 Full trackers/plans/goals/documents products.
 Implement planned knowledge trees and graph visualization.
