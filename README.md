@@ -369,12 +369,20 @@ Jane’s intended contract is privacy-first and local-first. Sensitive areas lik
 
 Status
 
-OpenJane’s iOS app now has a much more capable local-first workspace surface:
+OpenJane’s iOS app now has a much more capable local-first workspace surface including:
 
-The current iOS prototype includes an iMessage-style chat surface, tabbed app shell, 3d capture & storage, image capture & storage, audio/video recording scaffolds, markdown texts, markdown lists, layered calendar direction, public/private/business file storage lanes, and a file manager for moving user files between visibility levels. Public files are designed to be available through iOS Files under OpenJane, while private/business files stay inside the app container.
-
-- **File visibility lanes** remain `Private`, `Business`, and internal `public`, but the user-facing label for `public` is now **FileDrop** (Files-visible) to reduce “public == world” confusion.
-- The **Files** tab now supports preview/open for common formats: `md/txt/pdf`, `m4a/mp3/m4b/wav`, `mov/mp4`, and images (`jpg/png/heic`). Basic `md <-> txt` conversion is implemented; other conversions are stubbed behind menus.
+- iMessage-style chat surface
+- Tabbed app shell
+- 3d capture & storage (Lidar + photo)
+- Image capture & storage
+- Audio/video recording from device or meta glasses when attached
+- Markdown texts, markdown lists, and a basic text editer
+- Layered calendar direction
+- Public/private/business file storage lanes
+  - file manager for moving user files between visibility levels.
+  - Public files are designed to be available through iOS Files under OpenJane, while private/business files stay inside the app container.
+  - **File visibility lanes** remain `Private`, `Business`, and internal `public`, but the user-facing label for `public` is now **FileDrop** (Files-visible) to reduce “public == world” confusion.
+  - The **Files** tab now supports preview/open for common formats: `md/txt/pdf`, `m4a/mp3/m4b/wav`, `mov/mp4`, and images (`jpg/png/heic`). Basic `md <-> txt` conversion is implemented; other conversions are stubbed behind menus.
 - **Audio/Video/Images** recording flows save into lane-aware folders with a consistent filename prompt and visibility picker. Saved recordings/captures can be moved between lanes.
 - The **3D** tab is now functional and split into practical surfaces:
   - **Captures**: session-based multi-photo collections saved into `3D/Captures/<session>/images/` with `manifest.json`. Includes a **Capture Wizard** (Object + Turntable modes) with a checklist and completion gating, plus a **Stage Build-Ready** action for users without an immediate reconstruction pipeline.
