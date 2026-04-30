@@ -6,6 +6,10 @@ A primary goal is also to simplify / consolidate a basic set of user tools for u
 
 The current iOS prototype includes an iMessage-style chat surface, tabbed app shell, audio/video recording , and 3d capture and scanning scaffolds, markdown texts, markdown lists, layered calendar direction, public/private/business file storage lanes, and a file manager for moving user files between visibility levels. Public files are designed to be available through iOS Files under OpenJane, while private/business files stay inside the app container.
 
+Rhile the app works well on high end hardware, it struggles with feature scope on limited devices, the decision to modularize the tools and keep OpenJane a clean agent & communication surface with helper apps accessible for data collection will provide a better experience on a wider range of devices.  This decision was made on day 3 of app development and tool modules are scaffolded, and a lighter shell is being developed along with the full app. 
+
+The new suite of tools (The Wizards Toolbelt) will work overtop of OpenJane, saving to common storage spaces and respecting the overall storage scheme.
+
 OpenJane includes an openclaw channel plugin to communicate with your lobster and use it's tools.
 
 OpenJane is structured and intended to become a **SPINE-aware endpoint** the Jetsen Software Foundry: a way for users to speak into the system, receive meaningful updates back from it, and stay aligned with distributed agents, build tools, models, queues, and project workflows.
